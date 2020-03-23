@@ -1,0 +1,100 @@
+<article>
+  <h1>Grunder</h1>
+  <p>Clojure är ett funktionellt språk av typen <i>Lisp</i>. </p>
+  <h2>Hello World!</h2>
+  <p>
+     Nedan följer exempel på hur man skriver ett <i>"Hello World!"</i>-program i <i>Clojure</i>:
+    <pre>
+      <code class="clojure">
+        ;; Clojure
+        (println "Hello World!")
+      </code>
+    </pre>
+  </p>
+
+  <p>
+    Motsvarande exempel i Python/JavaScript:
+    <pre>
+      <code class="python">
+        # Python
+        print("Hello World!")
+      </code>
+      <code class="javascript">
+        // JavaScript
+        console.log("Hello World!")
+      </code>
+    </pre>
+  </p>
+
+  <h2>Syntax</h2>
+  <p>
+    Clojure-syntax är väldigt enkel på så sätt att all kod skrivs på i princip samma sätt. 
+    Koden består i huvudsak av två saker, data/värden och funktioner som på något sätt använder datan.
+    En funktion anropas med startparentes direkt följt av funktionsnamn, sedan alla parametrar separerade med mellanslag och till sist slutparentes. Exempel:
+    <pre>
+      <code class="clojure">
+        ;; Clojure
+        (funktionsnamn parameter1 parameter2 parameter3)
+      </code>
+    </pre>
+  </p>
+  <p>
+    Motsvarande exempel i Python/JavaScript:
+    <pre>
+      <code class="python">
+        # Python
+        funktionsnamn(parameter1, parameter2, parameter3)
+      </code>
+      <code class="javascript">
+        // JavaScript
+        funktionsnamn(parameter1, parameter2, parameter3);
+      </code>
+    </pre>
+  </p>
+  <h3>Hur definieras en funktion?</h3>
+  <p>
+    En funktion definieras med funktionen <i>defn</i> (kort för <i>define function</i>) 
+    som tar funktionsnamn som första input, sedan en lista med inputparametrar och 
+    efter det all kod som funktionen skall köra.
+    <pre>
+      <code class="clojure">
+        ;; Clojure
+        (defn funktionsnamn 
+         [parameter1 parameter2] 
+         (println "Hello World"))
+      </code>
+    </pre>
+  </p>
+  <p>
+    Motsvarande exempel i Python/JavaScript:
+    <pre>
+      <code class="python">
+        # Python
+        def funktionsnamn(parameter1, parameter2):
+            print("Hello World!")
+      </code>
+      <code class="javascript">
+        // JavaScript
+        function funktionsnamn(parameter1, parameter2) {
+          console.log("Hello World!");
+        }
+      </code>
+    </pre>
+  </p>
+
+  <h3>Ett praktiskt exempel</h3>
+  <p>
+    Låt oss skriva en funktion som skriver ut vårt namn och ålder i en hälsningsfras:
+    <pre>
+      <code class="clojure">
+        ;; Definiera funktionen
+        (defn hälsning
+         [namn ålder]
+         (println "Hej jag heter" namn "och jag är" ålder "år gammal"))
+
+        ;; Använd funktionen
+        (hälsning "Gottfried Wilhelm Leibniz" 374)
+      </code>
+    </pre>
+  </p>
+</article>

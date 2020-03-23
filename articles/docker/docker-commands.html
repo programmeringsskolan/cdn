@@ -1,0 +1,72 @@
+<article>
+  <h1>Dockerkommandon</h1>
+  <p>
+    Bygga image
+    <pre>
+      <code class="docker">
+        docker image build .
+      </code>
+    </pre>
+    Dockerfile med annat namn
+    <pre>
+      <code class="docker">
+        docker image build --file Dockerfile2 .
+      </code>
+    </pre>
+    Namnge din image
+    <pre>
+      <code class="docker">
+        docker image build --tag projekt1 .
+      </code>
+    </pre>
+  </p>
+  
+  <p>
+    Bygga containrar med docker-compose
+    <pre>
+      <code class="docker">
+        docker-compose build
+      </code>
+    </pre>
+  </p>
+  <p>
+    Starta containrar med docker-compose
+    <pre>
+      <code class="docker">
+        docker-compose up
+      </code>
+    </pre>
+  </p>
+  <p>
+    Stänga av containrar med docker-compose
+    <pre>
+      <code class="docker">
+        docker-compose down
+      </code>
+    </pre>
+  </p>
+  <p>
+    Ta bort oanvända containrar
+    <pre>
+      <code class="docker">
+        docker container prune
+      </code>
+    </pre>
+  </p>
+  <p>
+    Ta bort oanvända images
+    <pre>
+      <code class="docker">
+        docker image prune
+      </code>
+    </pre>
+  </p>
+  <p>
+    Ta bort allt
+    <pre>
+      <code class="docker">
+        docker system prune -a
+      </code>
+    </pre>
+  </p>
+</article>

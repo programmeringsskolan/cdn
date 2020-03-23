@@ -39,7 +39,6 @@
   color: #bc6060;
 }
 
-.hljs-built_in,
 .hljs-bullet,
 .hljs-code,
 .hljs-addition {
@@ -64,6 +63,7 @@
   color: var(--grass-dark);
 }
 
+.hljs-built_in,
 .hljs-keyword {
   font-style: italic;
   color: var(--lavander-dark);
